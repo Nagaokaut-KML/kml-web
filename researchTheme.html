@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta charset="utf-8">
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>知識マイニング研究室</title>
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+<link href="./css/style.css" rel="stylesheet">
+
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/responsive.css" rel="stylesheet">
+<link href="./css/font-awesome.min.css" rel="stylesheet">
+<link href="./css/jquery.fadeshow-0.1.1.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="over-bg"></div>
+<main role="slider-container"> 
+  
+  <!-- side bar -->
+  
+  <aside role="siderbar-nav" class="side-bar">
+    <nav>
+      <ul class="nav nav-tabs">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="news.html" title="News">News</a></li>
+        <li class="active"><a href="researchTheme.html" title="ResearchTheme">Research</a></li>
+        <li><a href="performance.html" title="Performance">Publications</a></li>
+        <li><a href="members.html" title="members">Members</a></li>
+        <li><a href="contact.html" title="Contact">Contact</a></li>
+        <li><a href="qa.html" title="qa">Q&A</a></li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <!-- side bar --> 
+  
+  <!-- main -->
+  
+  <main role="main" id="main">
+    <div class="container"> 
+      <div class="tab-content"> 
+        <header role="page-title">
+          <h1 class="boild text-green">Research Theme</h1>
+        </header>
+        <article>
+          <div class="ml-5">
+            <h2 class="boild text-blue">content</h2>
+            <p class="ml-5">知識マイニング研究室では、特許文書や判例文書、twitterや口コミサイトなどの知識源から企業経営等に役立つ“お宝”を見つける（英語ではマイニングといいます）ための技術開発やその応用について研究を行っております。特許文書を例に取ると、特許を点数化し技術力を定量的に評価することで投資戦略や研究開発戦略策定に役立つ技術の開発を行っております。さらに技術動向を可視化したパテントマップの自動生成や判例文書からの司法統計生成による裁判の可視化なども研究しております。また、最近は観光情報の解析にも力を入れており、ホテルやレストランに関する訪日観光客の口コミ分析に関する研究を行っております。他にもゲーム分野や不動産の口コミ解析など幅広くWeb情報を利用した口コミ解析に関する研究を行っております．研究は他大学や企業と共同で行っているものもあります。以下、個別のトピックに関して簡単に紹介します。</p>
+
+            <h2 class="boild text-blue">Patent analysis</h2>
+            <p class="ml-5">特許文書に審査官/出願人の引用ネットワークに基づいて重要度を算出する研究（パテントスコアリング）や特許文書中から重要語句を抽出しパテントマップと呼ばれるグラフを生成する研究を行っております．特許文書に重要度を算出する研究では，PageRankを用いる手法やネットワーク構造により特許文書をグループ化し，グループ毎の成長性を評価することにより特許の重要性を評価する手法等の開発を行っております．</p>
+
+            <h2 class="boild text-blue">Tourism analysis</h2>
+            <p class="ml-5">中国人観光客のホテルに関する口コミをWeb上から大量に収集したうえで，ポジティブな書き込みとネガティブな書き込みに分類し，さらに，何がポジティブ/ネガティブに影響したか分析する研究を行っております．結果から中国人観光客が朝食を重視しており，朝食が美味しいホテルにはポジティブな書き込みが多いことなどの知見が得られております．</p>
+          </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+<script src="./js/jquery.min.js" type="text/javascript"></script> 
+
+<!-- custom --> 
+
+<script src="./js/custom.js" type="text/javascript"></script> 
+<script src="./js/nav-custom.js" type="text/javascript"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+
+<script src="./js/bootstrap.min.js" type="text/javascript"></script> 
+
+<!-- jquery.countdown --> 
+
+<script src="./js/countdown-js.js" type="text/javascript"></script> 
+<script type="text/javascript" src="./js/jquery.contact.js"></script> 
+
+<!-- slider --> 
+
+<script type="text/javascript" src="./js/background.cycle.js"></script> 
+<script type="text/javascript" src="./js/background.cycle-custom.js"></script> 
+<script src="./js/html5shiv.js" type="text/javascript"></script> 
+
+<!-- Typed --> 
+<!-- Typed jS --> 
+
+<script src="./js/typed.js" type="text/javascript"></script> 
+<script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            backDelay: 1000,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+</body>
+</html>

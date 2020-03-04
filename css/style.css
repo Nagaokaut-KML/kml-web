@@ -1,0 +1,489 @@
+/*
+
+	Theme Name: Pixicon
+
+	Template URI: 
+
+	Description: 
+
+	Author:
+
+	Author URI: 
+
+	License: GNU General Public License version 3.0
+
+	License URI:
+
+	Version: 1.0
+
+	
+
+	1. Body style
+
+	2. Body
+
+	3. siderbar
+
+		1. Nave
+
+	4. Header
+
+	5. Main
+
+	6. Home
+
+	7. About
+
+	8. Subscribe
+
+	9. Contact
+
+	10. Footer
+	
+	11. Animated blinking cursor
+
+*/
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input, textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+button, html input[type="button"],/* 1 */ input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+ *overflow:visible;
+}
+body, img {
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, main {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img, main {
+	display: block
+}
+audio, canvas, video {
+	display: inline-block;
+ *display:inline;
+ *zoom:1
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+.clear {
+	clear: both;
+	line-height: 0;
+	height: 0;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: #010101;
+	transition-delay: 0s;
+	transition-duration: 0.6s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+a:focus, img:focus, button:focus, .btn:focus {
+	outline: none;
+}
+.ml-5{
+	margin-left: 3em; 
+}
+.mr-2{
+	margin-right: 1em;
+}
+.boild{
+	font-weight: bold;
+}
+.text-green{
+	color: #A9DE03;
+}
+.text-blue{
+	color: #60D9F0;
+}
+.text-magenta{
+	color: #ff1493;
+}
+.text-yellow{
+	color: #ffd700;
+}
+.text-purple{
+	color: #9932cc;
+}
+::-moz-selection {
+ background-color:#e84d49;
+ color:#fff;
+ text-shadow:none;
+}
+::selection {
+	background-color: #e84d49;
+	color: #fff;
+	text-shadow: none;
+}
+@font-face {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*== Body ==*/
+
+body {
+	background-image: url(../images/overlay-bg.png), url(../images/main-bg.jpg);
+	background-size: cover;
+	background-repeat: repeat, no-repeat;
+	background-position: center center;
+	background-attachment: fixed
+}
+
+p{
+	font-size: large;
+}
+small{
+	color: #FFF !important;
+	padding-left: 1em;
+}
+/*== Siderbar ==*/
+
+aside[role="siderbar-nav"] {
+	position: fixed;
+	left: 0;
+	height: 100%;
+	width: 150px;
+	top: 0;
+	background-color: #111111
+}
+aside[role="siderbar-nav"] > nav {
+	padding-top: 110px
+}
+aside[role="siderbar-nav"] > nav > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	border-bottom: none
+}
+aside[role="siderbar-nav"] > nav > ul > li {
+	display: block;
+	float: none;
+	margin-bottom: 25px
+}
+aside[role="siderbar-nav"] > nav > ul > li > a {
+	font-size: 18px;
+	color: #FFF;
+	border-radius: 0;
+	border: none;
+	padding: 0;
+}
+aside[role="siderbar-nav"] > nav > ul > li.active a, aside[role="siderbar-nav"] > nav > ul > li a:hover {
+	background-color: inherit;
+	border: none;
+	color: #e84d49
+}
+aside[role="siderbar-nav"] > nav .nav-tabs>li.active>a, aside[role="siderbar-nav"] > nav .nav-tabs>li.active>a:focus, aside[role="siderbar-nav"] > nav .nav-tabs>li.active>a:hover {
+	background-color: inherit;
+	border: none;
+	color: #e84d49
+}
+/*== Header ==*/
+
+header[role="main-header"] {
+	overflow: hidden;
+	padding-top: 108px
+}
+header[role="main-header"] h1 {
+	margin: 0;
+	padding: 0;
+}
+header[role="main-header"] h1 > a {
+	float: left;
+	display: block;
+	max-width: 73px
+}
+header[role="main-header"] ul[role="socil-icons"] {
+	list-style: none;
+	text-align: right;
+	float: right
+}
+header[role="main-header"] ul[role="socil-icons"] > li {
+	display: inline-block;
+	margin-left: 28px
+}
+header[role="main-header"] ul[role="socil-icons"] > li > a {
+	color: #FFF;
+	font-size: 14px;
+	font-weight: normal
+}
+header[role="main-header"] ul[role="socil-icons"] > li > a:hover {
+	color: #e84d49
+}
+/*== Main ==*/
+
+main[role="main"] {
+	padding-top: 83px;
+	padding-left: 10em;
+}
+/*== Home ==*/
+
+article.home-content {
+	color: #FFF
+}
+article.home-content header[role="home-title"] {
+	padding-bottom: 44px
+}
+article.home-content header[role="home-title"] h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 60px;
+	line-height: 62px;
+	font-weight: 700;
+}
+article.home-content header[role="home-title"] h2 > span {
+	color: #e84d49;
+}
+article.home-content p {
+	font-size: 21px;
+	line-height: 27px;
+}
+#countdown {
+	padding-top: 208px;
+	padding-bottom: 86px
+}
+#countdown span {
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 33px;
+	line-height: 34px;
+	margin-right: 57px
+}
+#countdown span b {
+	display: block;
+	font-size: 11px;
+	line-height: 12px;
+	letter-spacing: 2px;
+	border-top: 3px solid #e84d49;
+	margin-top: 5px;
+	padding-top: 6px
+}
+
+.news-li{
+  border-bottom:1px dotted #FFF;
+  list-style:none;
+  padding:10px;
+  width:100%;
+}
+.news-a{
+  color:#FFF;
+  text-decoration:none;
+}
+.news-span{
+  background-color:#2388b8;
+  border-radius:3px;
+  color:#fff;
+  display:inline-block;
+  margin-right:20px;
+  padding:5px;
+}
+.news-time{
+  display: inline-block;
+  font-weight: bold;
+  margin-right:40px;
+}
+.news-p{
+  color:#FFF;
+  display: inline-block;
+  text-decoration:underline;
+  text-decoration-color: #FFF;
+}
+
+/*== About ==*/
+
+.about-pan {
+	padding-bottom: 151px
+}
+.other-page header[role="page-title"] {
+	padding-bottom: 59px
+}
+.other-page header[role="page-title"] h2 {
+	padding: 0;
+	margin: 0;
+	color: #FFF;
+	font-size: 39px;
+	line-height: 40px;
+	font-weight: 700
+}
+.other-page article p {
+	font-size: 16px;
+	line-height: 27px;
+	color: #FFF;
+	padding: 0;
+	margin: 0;
+	width: 598px;
+	padding-bottom: 27px
+}
+/*== Members==*/
+#member-a{
+	color: #FFF;
+	transition: background-color .1s;	
+}
+#member-a:hover {
+  color: rgb(197, 197, 69);
+}
+
+#profile_img_100{
+	border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  100px;       /* ※縦横を同値に */
+    height: 100px;
+}
+
+#profile_img_40{
+	border-radius: 50%;
+    width:  40px;       /* ※縦横を同値に */
+    height: 40px;
+}
+
+#hoby_img{
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 5%;
+    width:  150px;       /* ※縦横を同値に */
+    height: 150px;
+}
+
+#news_img{
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 5%;
+    width:  150px;       /* ※縦横を同値に */
+    height: 150px;
+}
+
+.profile-p{
+	font-size: large;
+}
+.tech{
+	font-size: 30px;
+	color: #fff;
+}
+/*== performance ==*/
+.paper{
+	font-size: large;
+}
+
+/*== Footer ==*/
+
+footer[role="footer"] {
+	background-color: #111111;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 5
+}
+footer[role="footer"] p {
+	color: #FFF;
+	font-size: 14px;
+	line-height: 50px;
+	padding: 0;
+	margin: 0;
+	float: left
+}
+footer[role="footer"] p + p {
+	text-align: right;
+	float: right
+}
+footer[role="footer"] p i {
+	padding: 0 4px;
+	color: #e84d49
+}
+footer[role="footer"] p a {
+	padding: 0 4px;
+	color: #e84d49
+}
+/*==  code for animated blinking cursor ==*/
+.typed-cursor {
+	opacity: 1;
+	font-weight: 100;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	-ms-animation: blink 0.7s infinite;
+	-o-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+ @-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+ @-webkit-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+ @-moz-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+ @-ms-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+ @-o-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
