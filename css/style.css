@@ -132,6 +132,9 @@ a:focus, img:focus, button:focus, .btn:focus {
 .text-purple{
 	color: #9932cc;
 }
+.text-gray{
+	color: #C0C0C0;
+}
 ::-moz-selection {
  background-color:#e84d49;
  color:#fff;
